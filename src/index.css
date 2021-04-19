@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Page */
+.page__header, .page__footer, .page__container  {
+  border:1px solid white;
+}
+.page__header, .page__footer {
+  text-align: center;
+}
+.page__header {
+  background-color: #289ed6;
+}
+.page__footer {
+  background-color: darkgray;
+}
+.page__container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Calendar */
+.calendar {
+ border: 1px solid lightgrey;
+ padding: 5px;
+}
+.calendar__days {
+  display: block;
+  margin: 20px 0;
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.calendar__days li {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid white;
+}
+
+.calendar__header {
+  width:90px;
+  background-color:lightblue;
+  padding: 5px;
+}
+.calendar__body {
+  text-align: left;
+  padding: 5px;
+}
+.calendar__body .folk {
+  color: #036c96;
+  font-size: 12px;
+  display: inline-block;
+  margin: 5px;
+}
+.calendar__body .public {
+  color: orangered;
+  margin: 5px;
+}
+.calendar__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+.calendar__date {
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 5px;
+}
+.calendar__day {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+}
+.calendar__button {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.calendar__nav button {
+  margin: 0 5px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  /* Calendar */
+
+ .calendar__days {
+   display: flex;
+   
+ }
+ .calendar__days li {
+   display: block;
+   
+ }
+ 
+ .calendar__header {
+  width:auto;
+ }
 }
